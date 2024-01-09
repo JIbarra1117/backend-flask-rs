@@ -1,0 +1,4 @@
+venv/
+venv-backendFlask/
+__pycache__/
+.vscode/
