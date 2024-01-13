@@ -136,7 +136,7 @@ df["text_features"] = (
 )
 
 # Aplicar TF-IDF a las características de texto
-tfidf_vectorizer = TfidfVectorizer(stop_words="english", min_df=10, max_df=0.85)
+tfidf_vectorizer = TfidfVectorizer(stop_words="english", min_df=10, max_df=0.85) # Este metodo tiene predefinido la implementacion de NLP
 tfidf_matrix = tfidf_vectorizer.fit_transform(df["text_features"])
 cosine_similarities = linear_kernel(tfidf_matrix)
 
